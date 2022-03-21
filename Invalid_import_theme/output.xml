@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20220321 23:38:44.045" rpa="false" schemaversion="2">
+<suite id="s1" name="Invalid Import Theme" source="D:\SoftEN\test_3\test_3_1\invalid_import_theme.robot">
+<test id="s1-t1" name="Open Login Page">
+<kw name="Open Browser To Registration Page" library="resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN LINK}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220321 23:38:44.549" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:8000/authentication/login/'.</msg>
+<status status="PASS" starttime="20220321 23:38:44.548" endtime="20220321 23:38:46.644"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220321 23:38:46.644" endtime="20220321 23:38:46.645"/>
+</kw>
+<status status="PASS" starttime="20220321 23:38:44.548" endtime="20220321 23:38:46.645"/>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220321 23:38:46.653" level="INFO">Page title is 'Login'.</msg>
+<status status="PASS" starttime="20220321 23:38:46.646" endtime="20220321 23:38:46.654"/>
+</kw>
+<status status="PASS" starttime="20220321 23:38:46.646" endtime="20220321 23:38:46.654"/>
+</kw>
+<status status="PASS" starttime="20220321 23:38:44.546" endtime="20220321 23:38:46.655"/>
+</test>
+<test id="s1-t2" name="Admin Login">
+<kw name="Input User Name" library="resource">
+<arg>${ADMIN USER}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 23:38:46.662" level="INFO">Typing text 'admin' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20220321 23:38:46.661" endtime="20220321 23:38:46.794"/>
+</kw>
+<status status="PASS" starttime="20220321 23:38:46.659" endtime="20220321 23:38:46.794"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:38:47.809" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:38:46.795" endtime="20220321 23:38:47.809"/>
+</kw>
+<kw name="Input Password" library="resource">
+<arg>${ADMIN PASSWORD}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 23:38:47.812" level="INFO">Typing text 'JnWdBx6BSs' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20220321 23:38:47.811" endtime="20220321 23:38:47.973"/>
+</kw>
+<status status="PASS" starttime="20220321 23:38:47.810" endtime="20220321 23:38:47.973"/>
+</kw>
+<kw name="Click Singin Button" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:38:47.976" level="INFO">Clicking element 'name=submit'.</msg>
+<status status="PASS" starttime="20220321 23:38:47.975" endtime="20220321 23:38:50.336"/>
+</kw>
+<status status="PASS" starttime="20220321 23:38:47.974" endtime="20220321 23:38:50.336"/>
+</kw>
+<status status="PASS" starttime="20220321 23:38:46.658" endtime="20220321 23:38:50.338"/>
+</test>
+<test id="s1-t3" name="Click Import Theme_1">
+<kw name="Click System Menu Topbar and Setup" library="resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>Xpath=//*[@title="Home"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 23:38:50.345" endtime="20220321 23:38:51.240"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//li[@class="dropdown"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:38:51.241" level="INFO">Clicking element 'Xpath=//li[@class="dropdown"]'.</msg>
+<status status="PASS" starttime="20220321 23:38:51.240" endtime="20220321 23:38:51.331"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//a[@href="/setup/"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:38:51.331" level="INFO">Clicking element 'Xpath=//a[@href="/setup/"]'.</msg>
+<status status="PASS" starttime="20220321 23:38:51.331" endtime="20220321 23:38:51.415"/>
+</kw>
+<status status="PASS" starttime="20220321 23:38:50.344" endtime="20220321 23:38:51.416"/>
+</kw>
+<kw name="Click Logo and Themes items" library="resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>Xpath=//*[@title="Setup items"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 23:38:51.417" endtime="20220321 23:38:51.717"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//a[contains(text(),'Logo &amp; Themes')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:38:51.718" level="INFO">Clicking element 'Xpath=//a[contains(text(),'Logo &amp; Themes')]'.</msg>
+<status status="PASS" starttime="20220321 23:38:51.717" endtime="20220321 23:38:51.802"/>
+</kw>
+<status status="PASS" starttime="20220321 23:38:51.416" endtime="20220321 23:38:51.802"/>
+</kw>
+<kw name="Click Action Button" library="resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>Xpath=//h3[@title="Logo and Themes"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 23:38:51.804" endtime="20220321 23:38:52.079"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//div[@id='menu-actions']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:38:52.080" level="INFO">Clicking element 'Xpath=//div[@id='menu-actions']'.</msg>
+<status status="PASS" starttime="20220321 23:38:52.079" endtime="20220321 23:38:52.153"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//a[contains(text(),'Import new logo and theme')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:38:52.153" level="INFO">Clicking element 'Xpath=//a[contains(text(),'Import new logo and theme')]'.</msg>
+<status status="PASS" starttime="20220321 23:38:52.153" endtime="20220321 23:38:52.239"/>
+</kw>
+<status status="PASS" starttime="20220321 23:38:51.803" endtime="20220321 23:38:52.240"/>
+</kw>
+<status status="PASS" starttime="20220321 23:38:50.341" endtime="20220321 23:38:52.241"/>
+</test>
+<test id="s1-t4" name="Empty Upload">
+<kw name="Invalid Import Theme 1" library="resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//h3[@title="Import new logo and themes"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 23:38:52.247" endtime="20220321 23:38:52.712"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@id='id_label']</arg>
+<arg>Empty_File_Test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 23:38:52.713" level="INFO">Typing text 'Empty_File_Test' into text field 'xpath=//input[@id='id_label']'.</msg>
+<status status="PASS" starttime="20220321 23:38:52.713" endtime="20220321 23:38:52.878"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:38:53.884" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:38:52.878" endtime="20220321 23:38:53.884"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:38:53.884" level="INFO">Clicking element 'name=submit'.</msg>
+<status status="PASS" starttime="20220321 23:38:53.884" endtime="20220321 23:38:53.963"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:38:54.969" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:38:53.963" endtime="20220321 23:38:54.969"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="viewport"]/div[3]/form/div[1]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220321 23:38:54.996" level="INFO">Current page contains element 'xpath=//*[@id="viewport"]/div[3]/form/div[1]'.</msg>
+<status status="PASS" starttime="20220321 23:38:54.969" endtime="20220321 23:38:54.996"/>
+</kw>
+<status status="PASS" starttime="20220321 23:38:52.246" endtime="20220321 23:38:54.997"/>
+</kw>
+<kw name="Refresh Page" library="resource">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.location.reload(true);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220321 23:38:54.999" level="INFO">Executing JavaScript:
+window.location.reload(true);
+Without any arguments.</msg>
+<status status="PASS" starttime="20220321 23:38:54.998" endtime="20220321 23:38:55.890"/>
+</kw>
+<status status="PASS" starttime="20220321 23:38:54.997" endtime="20220321 23:38:55.891"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:38:56.896" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:38:55.892" endtime="20220321 23:38:56.896"/>
+</kw>
+<status status="PASS" starttime="20220321 23:38:52.245" endtime="20220321 23:38:56.897"/>
+</test>
+<test id="s1-t5" name="Empty Label">
+<kw name="Invalid Import Theme 2" library="resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//h3[@title="Import new logo and themes"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 23:38:56.901" endtime="20220321 23:38:57.350"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:38:58.356" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:38:57.350" endtime="20220321 23:38:58.356"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>xpath=//input[@id='id_import_file']</arg>
+<arg>${FILE LOCATION_1}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20220321 23:38:58.357" level="INFO">Sending D:\SoftEN\test_3\test_1\test.css to browser.</msg>
+<status status="PASS" starttime="20220321 23:38:58.356" endtime="20220321 23:38:58.417"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:38:59.421" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:38:58.418" endtime="20220321 23:38:59.421"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="viewport"]/div[3]/form/div[1]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220321 23:38:59.434" level="INFO">Current page contains element 'xpath=//*[@id="viewport"]/div[3]/form/div[1]'.</msg>
+<status status="PASS" starttime="20220321 23:38:59.421" endtime="20220321 23:38:59.435"/>
+</kw>
+<status status="PASS" starttime="20220321 23:38:56.901" endtime="20220321 23:38:59.435"/>
+</kw>
+<kw name="Refresh Page" library="resource">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.location.reload(true);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220321 23:38:59.438" level="INFO">Executing JavaScript:
+window.location.reload(true);
+Without any arguments.</msg>
+<status status="PASS" starttime="20220321 23:38:59.437" endtime="20220321 23:39:00.213"/>
+</kw>
+<status status="PASS" starttime="20220321 23:38:59.436" endtime="20220321 23:39:00.214"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:39:01.230" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:39:00.215" endtime="20220321 23:39:01.230"/>
+</kw>
+<status status="PASS" starttime="20220321 23:38:56.899" endtime="20220321 23:39:01.231"/>
+</test>
+<test id="s1-t6" name="Empty Label and Upload">
+<kw name="Invalid Import Theme 3" library="resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//h3[@title="Import new logo and themes"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 23:39:01.236" endtime="20220321 23:39:01.251"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:39:02.255" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:39:01.251" endtime="20220321 23:39:02.255"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:39:02.256" level="INFO">Clicking element 'name=submit'.</msg>
+<status status="PASS" starttime="20220321 23:39:02.255" endtime="20220321 23:39:02.325"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:39:03.335" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:39:02.325" endtime="20220321 23:39:03.335"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="viewport"]/div[3]/form/div[1]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220321 23:39:03.349" level="INFO">Current page contains element 'xpath=//*[@id="viewport"]/div[3]/form/div[1]'.</msg>
+<status status="PASS" starttime="20220321 23:39:03.335" endtime="20220321 23:39:03.349"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:01.235" endtime="20220321 23:39:03.349"/>
+</kw>
+<kw name="Refresh Page" library="resource">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.location.reload(true);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220321 23:39:03.352" level="INFO">Executing JavaScript:
+window.location.reload(true);
+Without any arguments.</msg>
+<status status="PASS" starttime="20220321 23:39:03.351" endtime="20220321 23:39:04.518"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:03.350" endtime="20220321 23:39:04.518"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:39:05.528" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:39:04.519" endtime="20220321 23:39:05.528"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:01.234" endtime="20220321 23:39:05.529"/>
+</test>
+<test id="s1-t7" name="Empty Label and Wrong File Type">
+<kw name="Invalid Import Theme 4" library="resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//h3[@title="Import new logo and themes"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 23:39:05.534" endtime="20220321 23:39:05.552"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:39:06.556" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:39:05.553" endtime="20220321 23:39:06.556"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>xpath=//input[@id='id_import_file']</arg>
+<arg>${INVALID_FILE_JPG}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20220321 23:39:06.557" level="INFO">Sending D:\SoftEN\hqdefault.jpg to browser.</msg>
+<status status="PASS" starttime="20220321 23:39:06.556" endtime="20220321 23:39:06.641"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:39:07.641" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:39:06.641" endtime="20220321 23:39:07.641"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:39:07.643" level="INFO">Clicking element 'name=submit'.</msg>
+<status status="PASS" starttime="20220321 23:39:07.641" endtime="20220321 23:39:07.712"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="viewport"]/div[3]/form/div[1]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220321 23:39:07.725" level="INFO">Current page contains element 'xpath=//*[@id="viewport"]/div[3]/form/div[1]'.</msg>
+<status status="PASS" starttime="20220321 23:39:07.712" endtime="20220321 23:39:07.725"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="viewport"]/div[3]/form/div[2]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220321 23:39:07.744" level="INFO">Current page contains element 'xpath=//*[@id="viewport"]/div[3]/form/div[2]'.</msg>
+<status status="PASS" starttime="20220321 23:39:07.726" endtime="20220321 23:39:07.744"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:05.534" endtime="20220321 23:39:07.744"/>
+</kw>
+<kw name="Refresh Page" library="resource">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.location.reload(true);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220321 23:39:07.747" level="INFO">Executing JavaScript:
+window.location.reload(true);
+Without any arguments.</msg>
+<status status="PASS" starttime="20220321 23:39:07.746" endtime="20220321 23:39:09.387"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:07.745" endtime="20220321 23:39:09.388"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:39:10.403" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:39:09.389" endtime="20220321 23:39:10.403"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:05.532" endtime="20220321 23:39:10.404"/>
+</test>
+<test id="s1-t8" name="Wrong File Type">
+<kw name="Invalid Import Theme 5" library="resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//h3[@title="Import new logo and themes"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 23:39:10.408" endtime="20220321 23:39:10.425"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:39:11.430" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:39:10.425" endtime="20220321 23:39:11.430"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@id='id_label']</arg>
+<arg>Invalid_File_Test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 23:39:11.431" level="INFO">Typing text 'Invalid_File_Test' into text field 'xpath=//input[@id='id_label']'.</msg>
+<status status="PASS" starttime="20220321 23:39:11.430" endtime="20220321 23:39:11.592"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:39:12.606" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:39:11.592" endtime="20220321 23:39:12.606"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>xpath=//input[@id='id_import_file']</arg>
+<arg>${INVALID_FILE_JPG}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20220321 23:39:12.607" level="INFO">Sending D:\SoftEN\hqdefault.jpg to browser.</msg>
+<status status="PASS" starttime="20220321 23:39:12.606" endtime="20220321 23:39:12.667"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:39:13.675" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:39:12.668" endtime="20220321 23:39:13.675"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:39:13.676" level="INFO">Clicking element 'name=submit'.</msg>
+<status status="PASS" starttime="20220321 23:39:13.675" endtime="20220321 23:39:13.754"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="viewport"]/div[3]/form/div[1]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220321 23:39:13.773" level="INFO">Current page contains element 'xpath=//*[@id="viewport"]/div[3]/form/div[1]'.</msg>
+<status status="PASS" starttime="20220321 23:39:13.754" endtime="20220321 23:39:13.773"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:10.408" endtime="20220321 23:39:13.773"/>
+</kw>
+<kw name="Refresh Page" library="resource">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.location.reload(true);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220321 23:39:13.776" level="INFO">Executing JavaScript:
+window.location.reload(true);
+Without any arguments.</msg>
+<status status="PASS" starttime="20220321 23:39:13.775" endtime="20220321 23:39:15.667"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:13.774" endtime="20220321 23:39:15.667"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:39:16.673" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:39:15.668" endtime="20220321 23:39:16.673"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:10.407" endtime="20220321 23:39:16.674"/>
+</test>
+<test id="s1-t9" name="Duplicates Label">
+<kw name="Import New Logo and Themes Label 1" library="resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//h3[@title="Import new logo and themes"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 23:39:16.680" endtime="20220321 23:39:16.918"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@id='id_label']</arg>
+<arg>${THEME NAME_1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 23:39:16.918" level="INFO">Typing text 'test_import_theames_1' into text field 'xpath=//input[@id='id_label']'.</msg>
+<status status="PASS" starttime="20220321 23:39:16.918" endtime="20220321 23:39:17.078"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:39:18.094" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:39:17.078" endtime="20220321 23:39:18.094"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>xpath=//input[@id='id_import_file']</arg>
+<arg>${FILE LOCATION_1}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20220321 23:39:18.096" level="INFO">Sending D:\SoftEN\test_3\test_1\test.css to browser.</msg>
+<status status="PASS" starttime="20220321 23:39:18.095" endtime="20220321 23:39:18.152"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:16.680" endtime="20220321 23:39:18.152"/>
+</kw>
+<kw name="Click Save Button" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:39:18.154" level="INFO">Clicking element 'name=submit'.</msg>
+<status status="PASS" starttime="20220321 23:39:18.154" endtime="20220321 23:39:18.232"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:18.153" endtime="20220321 23:39:18.233"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:39:20.238" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220321 23:39:18.234" endtime="20220321 23:39:20.238"/>
+</kw>
+<kw name="Succes Theme Import Alert" library="resource">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>//*[@id="toast-container"]/div/div</arg>
+<arg>${ALERT SUCCES}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220321 23:39:20.240" level="INFO">Verifying element '//*[@id="toast-container"]/div/div' contains exact text 'Theme created successfully.'.</msg>
+<status status="PASS" starttime="20220321 23:39:20.239" endtime="20220321 23:39:20.292"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:20.238" endtime="20220321 23:39:20.293"/>
+</kw>
+<kw name="Click Action Button" library="resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>Xpath=//h3[@title="Logo and Themes"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 23:39:20.295" endtime="20220321 23:39:20.318"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//div[@id='menu-actions']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:39:20.318" level="INFO">Clicking element 'Xpath=//div[@id='menu-actions']'.</msg>
+<status status="PASS" starttime="20220321 23:39:20.318" endtime="20220321 23:39:20.402"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//a[contains(text(),'Import new logo and theme')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:39:20.403" level="INFO">Clicking element 'Xpath=//a[contains(text(),'Import new logo and theme')]'.</msg>
+<status status="PASS" starttime="20220321 23:39:20.402" endtime="20220321 23:39:20.498"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:20.294" endtime="20220321 23:39:20.498"/>
+</kw>
+<kw name="Invalid Import Theme 6" library="resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//h3[@title="Import new logo and themes"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 23:39:20.501" endtime="20220321 23:39:21.173"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@id='id_label']</arg>
+<arg>${THEME NAME_1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 23:39:21.174" level="INFO">Typing text 'test_import_theames_1' into text field 'xpath=//input[@id='id_label']'.</msg>
+<status status="PASS" starttime="20220321 23:39:21.173" endtime="20220321 23:39:21.334"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:39:22.344" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:39:21.335" endtime="20220321 23:39:22.344"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>xpath=//input[@id='id_import_file']</arg>
+<arg>${FILE LOCATION_1}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20220321 23:39:22.345" level="INFO">Sending D:\SoftEN\test_3\test_1\test.css to browser.</msg>
+<status status="PASS" starttime="20220321 23:39:22.344" endtime="20220321 23:39:22.400"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:39:22.401" level="INFO">Clicking element 'name=submit'.</msg>
+<status status="PASS" starttime="20220321 23:39:22.400" endtime="20220321 23:39:22.468"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="viewport"]/div[3]/form/div[1]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220321 23:39:22.483" level="INFO">Current page contains element 'xpath=//*[@id="viewport"]/div[3]/form/div[1]'.</msg>
+<status status="PASS" starttime="20220321 23:39:22.468" endtime="20220321 23:39:22.484"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:20.499" endtime="20220321 23:39:22.485"/>
+</kw>
+<kw name="Refresh Page" library="resource">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.location.reload(true);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220321 23:39:22.488" level="INFO">Executing JavaScript:
+window.location.reload(true);
+Without any arguments.</msg>
+<status status="PASS" starttime="20220321 23:39:22.487" endtime="20220321 23:39:24.202"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:22.486" endtime="20220321 23:39:24.203"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:16.677" endtime="20220321 23:39:24.204"/>
+</test>
+<test id="s1-t10" name="Duplicates Label and Wrong File Type">
+<kw name="Invalid Import Theme 7" library="resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//h3[@title="Import new logo and themes"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 23:39:24.209" endtime="20220321 23:39:24.883"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@id='id_label']</arg>
+<arg>${THEME NAME_1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 23:39:24.884" level="INFO">Typing text 'test_import_theames_1' into text field 'xpath=//input[@id='id_label']'.</msg>
+<status status="PASS" starttime="20220321 23:39:24.884" endtime="20220321 23:39:25.039"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:39:26.045" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 23:39:25.039" endtime="20220321 23:39:26.045"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>xpath=//input[@id='id_import_file']</arg>
+<arg>${INVALID_FILE_JPG}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20220321 23:39:26.046" level="INFO">Sending D:\SoftEN\hqdefault.jpg to browser.</msg>
+<status status="PASS" starttime="20220321 23:39:26.045" endtime="20220321 23:39:26.100"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:39:26.101" level="INFO">Clicking element 'name=submit'.</msg>
+<status status="PASS" starttime="20220321 23:39:26.100" endtime="20220321 23:39:26.176"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="viewport"]/div[3]/form/div[1]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220321 23:39:26.190" level="INFO">Current page contains element 'xpath=//*[@id="viewport"]/div[3]/form/div[1]'.</msg>
+<status status="PASS" starttime="20220321 23:39:26.176" endtime="20220321 23:39:26.190"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="viewport"]/div[3]/form/div[2]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220321 23:39:26.207" level="INFO">Current page contains element 'xpath=//*[@id="viewport"]/div[3]/form/div[2]'.</msg>
+<status status="PASS" starttime="20220321 23:39:26.190" endtime="20220321 23:39:26.208"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:24.208" endtime="20220321 23:39:26.208"/>
+</kw>
+<kw name="Refresh Page" library="resource">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.location.reload(true);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220321 23:39:26.211" level="INFO">Executing JavaScript:
+window.location.reload(true);
+Without any arguments.</msg>
+<status status="PASS" starttime="20220321 23:39:26.210" endtime="20220321 23:39:28.146"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:26.209" endtime="20220321 23:39:28.147"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:24.207" endtime="20220321 23:39:28.148"/>
+</test>
+<test id="s1-t11" name="Reset to default">
+<kw name="Delete Theme" library="resource">
+<kw name="Sleep" library="BuiltIn">
+<arg>6</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:39:34.165" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20220321 23:39:28.154" endtime="20220321 23:39:34.165"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//li[@class="dropdown"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:39:34.165" level="INFO">Clicking element 'Xpath=//li[@class="dropdown"]'.</msg>
+<status status="PASS" starttime="20220321 23:39:34.165" endtime="20220321 23:39:34.262"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//a[@href="/setup/"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:39:34.262" level="INFO">Clicking element 'Xpath=//a[@href="/setup/"]'.</msg>
+<status status="PASS" starttime="20220321 23:39:34.262" endtime="20220321 23:39:34.357"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>Xpath=//*[@title="Setup items"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 23:39:34.357" endtime="20220321 23:39:34.841"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//a[contains(text(),'Logo &amp; Themes')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:39:34.841" level="INFO">Clicking element 'Xpath=//a[contains(text(),'Logo &amp; Themes')]'.</msg>
+<status status="PASS" starttime="20220321 23:39:34.841" endtime="20220321 23:39:34.922"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>Xpath=//h3[@title="Logo and Themes"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 23:39:34.922" endtime="20220321 23:39:35.406"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//a[contains(text(),'Delete')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:39:35.407" level="INFO">Clicking element 'Xpath=//a[contains(text(),'Delete')]'.</msg>
+<status status="PASS" starttime="20220321 23:39:35.406" endtime="20220321 23:39:35.497"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>Xpath=//h3[contains(text(),'Are you sure?')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 23:39:35.497" endtime="20220321 23:39:35.954"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//button[@class='btn btn-danger']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 23:39:35.955" level="INFO">Clicking element 'Xpath=//button[@class='btn btn-danger']'.</msg>
+<status status="PASS" starttime="20220321 23:39:35.954" endtime="20220321 23:39:36.080"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:39:39.091" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220321 23:39:36.080" endtime="20220321 23:39:39.091"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:28.153" endtime="20220321 23:39:39.091"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 23:39:41.099" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220321 23:39:39.092" endtime="20220321 23:39:41.099"/>
+</kw>
+<kw name="Delete Succes Theme Import Alert" library="resource">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>//*[@id="toast-container"]/div/div</arg>
+<arg>${ALERT DELETE}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220321 23:39:41.102" level="INFO">Verifying element '//*[@id="toast-container"]/div/div' contains exact text 'Theme deleted successfully.'.</msg>
+<status status="PASS" starttime="20220321 23:39:41.101" endtime="20220321 23:39:41.168"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:41.100" endtime="20220321 23:39:41.168"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:28.151" endtime="20220321 23:39:41.169"/>
+</test>
+<test id="s1-t12" name="Close Web Browser">
+<kw name="Close Web Browser" library="resource">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220321 23:39:41.174" endtime="20220321 23:39:43.590"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:41.174" endtime="20220321 23:39:43.591"/>
+</kw>
+<status status="PASS" starttime="20220321 23:39:41.172" endtime="20220321 23:39:43.592"/>
+</test>
+<status status="PASS" starttime="20220321 23:38:44.048" endtime="20220321 23:39:43.597"/>
+</suite>
+<statistics>
+<total>
+<stat pass="12" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="12" fail="0" skip="0" id="s1" name="Invalid Import Theme">Invalid Import Theme</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

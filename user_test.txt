@@ -1,0 +1,5 @@
+Username: user_test
+First name: Dev
+Last name : Kub
+Email : user_test@gmail.com
+Password : Test@123

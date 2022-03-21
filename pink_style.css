@@ -1,0 +1,100 @@
+.navbar.navbar-default.navbar-fixed-top, .panel-primary .panel-heading, .pull-right.btn-group.open li a:hover{
+    background: #c205bc;
+}
+#menu-main {
+    background-color: #c205bc;
+}
+#accordion-sidebar .panel-heading {
+    background-color: #c205bc;
+}
+#accordion-sidebar  .panel  div  .panel-body{
+    background-color: #c205bc;
+    transition: .1s ease;
+}
+.navbar.navbar-default.navbar-fixed-top .dropdown-menu li a:hover{
+    background: #c205bc;
+}
+.btn-block{
+    background-color: #c205bc;
+}
+.navbar.navbar-default.navbar-fixed-top .dropdown-menu li a:hover{
+    background: #c205bc;
+}
+.well .panel-heading, .well .svg, .well div > i svg{
+    color: #c205bc;
+}
+.panel-primary .panel-body{
+    color: #c205bc;
+}
+.btn-primary{
+    background: #c205bc;
+    border: 1px solid #c205bc;
+}
+.well .panel-primary .panel-heading{
+    background: #c205bc;
+}
+.nav.navbar-nav.navbar-right li.dropdown.open a[aria-expanded="true"] {
+    background: #f122cb;
+}
+#accordion-sidebar  .panel  div  .panel-body  ul  li:hover {
+    background-color: #f122cb;
+    transition: .1s ease;
+}
+#accordion-sidebar a[aria-expanded="true"]{
+    background-color: #f122cb;
+}
+#accordion-sidebar  .panel  div  .panel-body  ul  li.active {
+    background: #f122cb;
+}
+#accordion-sidebar  .panel  div  .panel-body  ul  li:active {
+    background: #f122cb;
+}
+.btn-block:hover, .btn-block:focus{
+    background-color: #f122cb;
+}
+#accordion-sidebar .panel-heading:hover {
+    background-color: #f122cb;
+    transition: .1s ease;
+}
+.input-group-btn a.btn-primary{
+    background: #f122cb;
+}
+#sidebar ul.list-group > li a:hover{
+    background: #f122cb;
+}
+.well, .well div.panel-footer{
+    background: #d3a8dc;
+}
+.btn-default:not(.btn-danger){
+    background: #adadad;
+}
+h3#content-title,h4, p small, p.small, .well label:not(.btn), .well td:not(.last), .well li::marker,li,th,.form-group{
+    color: #000000;
+}
+body, .well.center-block tr td,.pull-right.btn-group.open ul, .form-control, .navbar.navbar-default.navbar-fixed-top .dropdown-menu, .well div.panel-body,.panel-primary .panel-body, .well .panel-secondary > .panel-heading,#sidebar ul.list-group > li a{
+    background: #ffffff;  
+}
+.navbar.navbar-default.navbar-fixed-top .dropdown-menu li a:hover,#sidebar ul.list-group > li a:hover, .pull-right.btn-group.open strong:hover, .pull-right.btn-group.open li a:hover{
+    color: #ffffff;
+}
+.well p.help-block{
+    color: #17cf54;
+}
+.well a:not(.btn), .navbar.navbar-default.navbar-fixed-top #navbar > ul > li > a:hover, .navbar.navbar-default.navbar-fixed-top #navbar > ul > li.open > a[aria-expanded="true"]{
+    color: #47b8f0;
+}
+.navbar.navbar-default.navbar-fixed-top #navbar > ul > li > a,.navbar.navbar-default.navbar-fixed-top #navbar > li > a,#accordion-sidebar  .panel  div  .panel-body  ul  li a, #accordion-sidebar  .panel-title, .btn,.well .panel-primary .panel-heading span{
+    color: #ffffff;
+}
+.well .panel-primary .panel-heading span{
+    color: #ffffff !important;
+}
+#sidebar ul.list-group > li.dropdown-header, #sidebar ul.list-group > li a,.navbar.navbar-default.navbar-fixed-top .dropdown-menu li a{
+    color: #000000;
+}
+.pull-right.btn-group.open strong, .pull-right.btn-group.open li a{
+    color: #000000;
+}
+*{
+    font-family: 'Tahoma', sans-serif !important;
+}

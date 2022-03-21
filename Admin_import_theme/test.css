@@ -1,0 +1,97 @@
+.navbar.navbar-default.navbar-fixed-top, .panel-primary .panel-heading, .pull-right.btn-group.open li a:hover{
+            background: rgb(37, 142, 199);
+        }
+        #menu-main {
+            background-color: rgb(37, 142, 199);
+        }
+        #accordion-sidebar .panel-heading {
+            background-color: rgb(37, 142, 199);
+        }
+        #accordion-sidebar  .panel  div  .panel-body{
+            background-color: rgb(37, 142, 199);
+            transition: .1s ease;
+        }
+        .navbar.navbar-default.navbar-fixed-top .dropdown-menu li a:hover{
+            background: rgb(37, 142, 199);
+        }
+        .btn-block{
+            background-color: rgb(37, 142, 199);
+        }
+        .navbar.navbar-default.navbar-fixed-top .dropdown-menu li a:hover{
+            background: rgb(37, 142, 199);
+        }
+        .well .panel-heading, .well .svg, .well div > i svg{
+            color: rgb(37, 142, 199);
+        }
+        .panel-primary .panel-body{
+            color: rgb(37, 142, 199);
+        }
+        .btn-primary{
+            background: rgb(37, 142, 199);
+            border: 1px solid rgb(37, 142, 199);
+        }
+        .well .panel-primary .panel-heading{
+            background: rgb(37, 142, 199);
+        }
+        .nav.navbar-nav.navbar-right li.dropdown.open a[aria-expanded="true"] {
+            background: rgb(213, 34, 255);
+        }
+        #accordion-sidebar  .panel  div  .panel-body  ul  li:hover {
+            background-color: rgb(213, 34, 255);
+            transition: .1s ease;
+        }
+        #accordion-sidebar a[aria-expanded="true"]{
+            background-color: rgb(213, 34, 255);
+        }
+        #accordion-sidebar  .panel  div  .panel-body  ul  li.active {
+            background: rgb(213, 34, 255);
+        }
+        #accordion-sidebar  .panel  div  .panel-body  ul  li:active {
+            background: rgb(213, 34, 255);
+        }
+        .btn-block:hover, .btn-block:focus{
+            background-color: rgb(213, 34, 255);
+        }
+        #accordion-sidebar .panel-heading:hover {
+            background-color: rgb(213, 34, 255);
+            transition: .1s ease;
+        }
+        .input-group-btn a.btn-primary{
+            background: rgb(213, 34, 255);
+        }
+        #sidebar ul.list-group > li a:hover{
+            background: rgb(213, 34, 255);
+        }
+        .well, .well div.panel-footer{
+            background: rgb(255, 34, 161);
+        }
+        .btn-default:not(.btn-danger){
+            background: rgb(255, 218, 103);
+        }
+        h3#content-title,h4, p small, p.small, .well label:not(.btn), .well td:not(.last), .well li::marker,li,th,.form-group{
+            color: rgb(255, 90, 0);
+        }
+        body, .well.center-block tr td,.pull-right.btn-group.open ul, .form-control, .navbar.navbar-default.navbar-fixed-top .dropdown-menu, .well div.panel-body,.panel-primary .panel-body, .well .panel-secondary > .panel-heading,#sidebar ul.list-group > li a{
+            background: rgb(255, 255, 255);  
+        }
+        .navbar.navbar-default.navbar-fixed-top .dropdown-menu li a:hover,#sidebar ul.list-group > li a:hover, .pull-right.btn-group.open strong:hover, .pull-right.btn-group.open li a:hover{
+            color: rgb(255, 255, 255);
+        }
+        .well p.help-block{
+            color: rgb(255, 75, 75);
+        }
+        .well a:not(.btn), .navbar.navbar-default.navbar-fixed-top #navbar > ul > li > a:hover, .navbar.navbar-default.navbar-fixed-top #navbar > ul > li.open > a[aria-expanded="true"]{
+            color: rgb(141, 75, 255);
+        }
+        .navbar.navbar-default.navbar-fixed-top #navbar > ul > li > a,.navbar.navbar-default.navbar-fixed-top #navbar > li > a,#accordion-sidebar  .panel  div  .panel-body  ul  li a, #accordion-sidebar  .panel-title, .btn,.well .panel-primary .panel-heading span{
+            color: rgb(0, 255, 109);
+        }
+        .well .panel-primary .panel-heading span{
+            color: rgb(0, 255, 109) !important;
+        }
+        #sidebar ul.list-group > li.dropdown-header, #sidebar ul.list-group > li a,.navbar.navbar-default.navbar-fixed-top .dropdown-menu li a{
+            color: rgb(139, 255, 0);
+        }
+        .pull-right.btn-group.open strong, .pull-right.btn-group.open li a{
+            color: rgb(139, 255, 0);
+        }
